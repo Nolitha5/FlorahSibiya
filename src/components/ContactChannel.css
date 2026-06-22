@@ -1,0 +1,41 @@
+.contact-channel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  transition: border-color var(--transition), background var(--transition);
+}
+.contact-channel:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-surface);
+}
+.contact-channel-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-dim);
+  border: 1px solid rgba(232, 70, 124, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.contact-channel-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--accent);
+}
+.contact-channel-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.15rem;
+}
+.contact-channel-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
