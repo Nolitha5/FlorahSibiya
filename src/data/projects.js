@@ -8,14 +8,10 @@ export const projects = [
     image: '/assets/personalOS.jpeg',
     video: '/assets/PersonalOS3in1.mp4',
     docs: 'https://github.com/Nolitha5/PersonalOS/blob/main/README.md',
+    liveDemo: 'https://personal-os-git-main-florah-s-projects.vercel.app/',
     featured: true,
     links: [
       { label: 'GitHub', href: 'https://github.com/Nolitha5/PersonalOS', type: 'github' },
-      {
-        label: 'Live Demo',
-        href: 'https://personal-os-git-main-florah-s-projects.vercel.app/',
-        type: 'demo',
-      },
     ],
   },
   {
@@ -27,6 +23,7 @@ export const projects = [
     image: '/assets/admin_log.jpg',
     video: null,
     docs: 'https://github.com/Nolitha5/SmartTech-Web/blob/main/README.md',
+    liveDemo: null,
     featured: false,
     links: [{ label: 'GitHub', href: 'https://github.com/Nolitha5/SmartTech-Web', type: 'github' }],
   },
@@ -39,6 +36,7 @@ export const projects = [
     image: '/assets/projImage.png',
     video: null,
     docs: 'https://github.com/Nolitha5/DoctorsAppointmentBooking/blob/main/README.md',
+    liveDemo: 'https://dr-appointment-6316.vercel.app/',
     featured: false,
     links: [
       {
@@ -46,7 +44,6 @@ export const projects = [
         href: 'https://github.com/Nolitha5/DoctorsAppointmentBooking/',
         type: 'github',
       },
-      { label: 'Live Demo', href: 'https://dr-appointment-6316.vercel.app/', type: 'demo' },
     ],
   },
   {
@@ -58,14 +55,9 @@ export const projects = [
     image: '/assets/Career.png',
     video: '/assets/SmartCareerguidance.mp4',
     docs: 'https://colab.research.google.com/drive/1ThZYO6gBBGuM-E4Tlc1vn4io_dF55zF-',
+    liveDemo: 'https://colab.research.google.com/drive/1ThZYO6gBBGuM-E4Tlc1vn4io_dF55zF-',
     featured: false,
-    links: [
-      {
-        label: 'Open in Colab',
-        href: 'https://colab.research.google.com/drive/1ThZYO6gBBGuM-E4Tlc1vn4io_dF55zF-',
-        type: 'demo',
-      },
-    ],
+    links: [],
   },
   {
     id: 'clothing-intelligence',
@@ -76,14 +68,9 @@ export const projects = [
     image: '/assets/ClothingAnalysis.webp',
     video: null,
     docs: 'https://colab.research.google.com/drive/1ThZYO6gBBGuM-E4Tlc1vn4io_dF55zF-',
+    liveDemo: 'https://colab.research.google.com/drive/1ThZYO6gBBGuM-E4Tlc1vn4io_dF55zF-',
     featured: false,
-    links: [
-      {
-        label: 'Open in Colab',
-        href: 'https://colab.research.google.com/drive/1ThZYO6gBBGuM-E4Tlc1vn4io_dF55zF-',
-        type: 'demo',
-      },
-    ],
+    links: [],
   },
   {
     id: 'health-assistant',
@@ -94,14 +81,9 @@ export const projects = [
     image: '/assets/bmipic.png',
     video: '/assets/SHA.mp4',
     docs: 'https://colab.research.google.com/drive/1ThZYO6gBBGuM-E4Tlc1vn4io_dF55zF-',
+    liveDemo: 'https://colab.research.google.com/drive/1ThZYO6gBBGuM-E4Tlc1vn4io_dF55zF-',
     featured: false,
-    links: [
-      {
-        label: 'Open in Colab',
-        href: 'https://colab.research.google.com/drive/1ThZYO6gBBGuM-E4Tlc1vn4io_dF55zF-',
-        type: 'demo',
-      },
-    ],
+    links: [],
   },
   {
     id: 'fingerprint-scanner',
@@ -112,6 +94,7 @@ export const projects = [
     image: '/assets/fingerprint.png',
     video: null,
     docs: 'https://github.com/Nolitha5/fingerprint/blob/main/README.md',
+    liveDemo: null,
     featured: false,
     links: [{ label: 'GitHub', href: 'https://github.com/Nolitha5/fingerprint', type: 'github' }],
   },
@@ -124,10 +107,10 @@ export const projects = [
     image: '/assets/storr.png',
     video: null,
     docs: 'https://github.com/Nolitha5/ecom/blob/main/README.md',
+    liveDemo: 'https://ecom-r26z.onrender.com/',
     featured: false,
     links: [
       { label: 'GitHub', href: 'https://github.com/Nolitha5/ecom', type: 'github' },
-      { label: 'Live Demo', href: 'https://ecom-r26z.onrender.com/', type: 'demo' },
     ],
   },
   {
@@ -139,6 +122,7 @@ export const projects = [
     image: '/assets/4ir.jpg',
     video: null,
     docs: 'https://github.com/Nolitha5/Form/blob/main/README.md',
+    liveDemo: null,
     featured: false,
     links: [{ label: 'GitHub', href: 'https://github.com/Nolitha5/Form', type: 'github' }],
   },

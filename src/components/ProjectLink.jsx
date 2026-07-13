@@ -22,10 +22,13 @@ function DocsIcon() {
 }
 
 function ProjectLink({ label, href, type, onClick, disabled }) {
+  const disabledClass = disabled ? ' project-link--disabled' : ''
+
+  // Video — renders as button
   if (type === 'video') {
     return (
       <button
-        className={`project-link${disabled ? ' project-link--disabled' : ''}`}
+        className={`project-link${disabledClass}`}
         onClick={!disabled ? onClick : undefined}
         title={disabled ? 'Demo coming soon' : 'Watch demo'}
         disabled={disabled}
@@ -36,6 +39,25 @@ function ProjectLink({ label, href, type, onClick, disabled }) {
     )
   }
 
+  // Live Demo — anchor, grayed out if no href
+  if (type === 'demo') {
+    if (disabled || !href) {
+      return (
+        <span className={`project-link project-link--disabled`} title="Coming soon">
+          <ExternalLinkIcon />
+          {label}
+        </span>
+      )
+    }
+    return (
+      <a href={href} target="_blank" rel="noreferrer" className="project-link">
+        <ExternalLinkIcon />
+        {label}
+      </a>
+    )
+  }
+
+  // Docs
   if (type === 'docs') {
     return (
       <a href={href} target="_blank" rel="noreferrer" className="project-link">
@@ -45,6 +67,7 @@ function ProjectLink({ label, href, type, onClick, disabled }) {
     )
   }
 
+  // GitHub and anything else
   return (
     <a href={href} target="_blank" rel="noreferrer" className="project-link">
       {type === 'github' ? <GitHubOutlineIcon /> : <ExternalLinkIcon />}

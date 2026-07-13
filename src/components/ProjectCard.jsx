@@ -2,7 +2,7 @@ import ProjectLink from './ProjectLink'
 import './ProjectCard.css'
 
 function ProjectCard({ project, onPlayDemo }) {
-  const { title, tag, description, image, featured, links, video, docs } = project
+  const { title, tag, description, image, featured, links, video, docs, liveDemo } = project
 
   return (
     <div className={`project-card${featured ? ' featured' : ''}`}>
@@ -15,19 +15,28 @@ function ProjectCard({ project, onPlayDemo }) {
         <p>{description}</p>
 
         <div className="project-links">
+          {/* Watch Demo — always shown, grayed out if no video yet */}
           <ProjectLink
             type="video"
             label="Watch Demo"
             onClick={video ? () => onPlayDemo(project) : null}
             disabled={!video}
           />
+
+          {/* Live Demo — always shown, grayed out if no URL yet */}
+          <ProjectLink
+            type="demo"
+            label="Live Demo"
+            href={liveDemo}
+            disabled={!liveDemo}
+          />
+
+          {/* Docs — always shown */}
           {docs && (
-            <ProjectLink
-              type="docs"
-              label="Docs"
-              href={docs}
-            />
+            <ProjectLink type="docs" label="Docs" href={docs} />
           )}
+
+          {/* GitHub and any other links */}
           {links.map((link) => (
             <ProjectLink key={link.label + link.href} {...link} />
           ))}
