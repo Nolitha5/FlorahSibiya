@@ -39,8 +39,8 @@ function Education() {
     <section id="education">
       <div className="container">
         <div className="section-header">
-          <div className="section-label">Background</div>
-          <h2 className="section-title">Education & Experience</h2>
+          <div className="section-label">Journey</div>
+          <h2 className="section-title">Experience &amp; Education</h2>
           <p className="section-desc">
             My academic journey and professional experience — from the classroom to building
             real-world AI and software systems.

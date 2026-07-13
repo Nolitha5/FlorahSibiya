@@ -1,5 +1,35 @@
 export const educationItems = [
   {
+    id: 'graduate-intern',
+    type: 'experience',
+    title: 'Graduate Intern — AI & Software Development',
+    institution: '4IR TUT',
+    period: '2026 – Present',
+    icon: '🤖',
+    highlights: [
+      'Built AI-driven applications including CV screening and smart health assistant systems',
+      'Integrated AI models with backend systems using FastAPI',
+      'Worked on agentic AI concepts to automate user-driven processes and decision-making',
+      'Conducted research and implemented AI-based solutions for real-world problems',
+      'Collaborated in team environments to deliver functional software solutions',
+    ],
+  },
+  {
+    id: 'wil-intern',
+    type: 'experience',
+    title: 'Software Development Intern — WIL Programme',
+    institution: '4IR TUT',
+    period: '2025',
+    icon: '💻',
+    highlights: [
+      'Developed and maintained web application features using React.js and Node.js',
+      'Collaborated with teams using Git for version control and project coordination',
+      'Performed debugging and optimization of existing systems, improving reliability',
+      'Participated in database design and management using MySQL/PostgreSQL',
+      'Contributed to documentation and reporting for ongoing development projects',
+    ],
+  },
+  {
     id: 'national-diploma',
     type: 'education',
     title: 'National Diploma — Information Technology (Software Development)',
