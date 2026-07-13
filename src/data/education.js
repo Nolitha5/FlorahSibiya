@@ -51,12 +51,12 @@ export const educationItems = [
     period: '2017',
     icon: '🏫',
     highlights: [
-      'Life Orientation: 80% (Level 7)',
-      'SiSwati Home Language: 67% (Level 5)',
-      'English First Additional Language: 63% (Level 5)',
-      'Geography: 68% (Level 5)',
-      'Life Sciences: 69% (Level 5)',
-      'Mathematics: 42% (Level 3)',
+      'Life Orientation',
+      'SiSwati Home Language',
+      'English First Additional Language',
+      'Geography',
+      'Life Sciences',
+      'Mathematics',
     ],
   },
 ]
