@@ -21,19 +21,33 @@ function DocsIcon() {
   )
 }
 
-function ProjectLink({ label, href, type, onClick }) {
+function ProjectLink({ label, href, type, onClick, disabled }) {
   if (type === 'video') {
     return (
-      <button className="project-link" onClick={onClick}>
+      <button
+        className={`project-link${disabled ? ' project-link--disabled' : ''}`}
+        onClick={!disabled ? onClick : undefined}
+        title={disabled ? 'Demo coming soon' : 'Watch demo'}
+        disabled={disabled}
+      >
         <PlayIcon />
         {label}
       </button>
     )
   }
 
+  if (type === 'docs') {
+    return (
+      <a href={href} target="_blank" rel="noreferrer" className="project-link">
+        <DocsIcon />
+        {label}
+      </a>
+    )
+  }
+
   return (
     <a href={href} target="_blank" rel="noreferrer" className="project-link">
-      {type === 'github' ? <GitHubOutlineIcon /> : type === 'docs' ? <DocsIcon /> : <ExternalLinkIcon />}
+      {type === 'github' ? <GitHubOutlineIcon /> : <ExternalLinkIcon />}
       {label}
     </a>
   )

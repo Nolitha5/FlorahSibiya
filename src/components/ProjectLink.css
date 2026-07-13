@@ -9,6 +9,9 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 0.4rem 0.85rem;
+  background: transparent;
+  font-family: var(--font-body);
+  cursor: pointer;
   transition: color var(--transition), border-color var(--transition),
     background var(--transition);
 }
@@ -20,4 +23,15 @@
 .project-link svg {
   width: 13px;
   height: 13px;
+}
+
+/* Disabled state — video not yet added */
+.project-link--disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.project-link--disabled:hover {
+  color: var(--text-secondary);
+  border-color: var(--border);
+  background: transparent;
 }

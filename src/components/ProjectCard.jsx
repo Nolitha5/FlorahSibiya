@@ -15,13 +15,12 @@ function ProjectCard({ project, onPlayDemo }) {
         <p>{description}</p>
 
         <div className="project-links">
-          {video && (
-            <ProjectLink
-              type="video"
-              label="Watch Demo"
-              onClick={() => onPlayDemo(project)}
-            />
-          )}
+          <ProjectLink
+            type="video"
+            label="Watch Demo"
+            onClick={video ? () => onPlayDemo(project) : null}
+            disabled={!video}
+          />
           {docs && (
             <ProjectLink
               type="docs"
