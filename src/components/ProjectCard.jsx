@@ -2,7 +2,7 @@ import ProjectLink from './ProjectLink'
 import './ProjectCard.css'
 
 function ProjectCard({ project, onPlayDemo }) {
-  const { title, tag, description, image, featured, links, video, docs, liveDemo } = project
+  const { title, tag, description, image, featured, links, video, docs, liveDemo, colab } = project
 
   return (
     <div className={`project-card${featured ? ' featured' : ''}`}>
@@ -31,12 +31,17 @@ function ProjectCard({ project, onPlayDemo }) {
             disabled={!liveDemo}
           />
 
+          {/* Colab — only shown for Colab projects */}
+          {colab && (
+            <ProjectLink type="colab" label="Colab" href={colab} />
+          )}
+
           {/* Docs — always shown */}
           {docs && (
             <ProjectLink type="docs" label="Docs" href={docs} />
           )}
 
-          {/* GitHub and any other links */}
+          {/* GitHub */}
           {links.map((link) => (
             <ProjectLink key={link.label + link.href} {...link} />
           ))}

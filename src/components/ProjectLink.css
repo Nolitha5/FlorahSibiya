@@ -35,3 +35,14 @@
   border-color: var(--border);
   background: transparent;
 }
+
+/* Colab — orange accent to match Colab branding */
+.project-link--colab {
+  color: #e37400;
+  border-color: rgba(227, 116, 0, 0.3);
+}
+.project-link--colab:hover {
+  color: #c45f00;
+  border-color: rgba(227, 116, 0, 0.6);
+  background: rgba(227, 116, 0, 0.06);
+}

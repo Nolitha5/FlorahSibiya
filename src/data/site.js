@@ -12,7 +12,7 @@ export const socialLinks = {
 
 export const contactInfo = {
   email: 'sibiyanolitha5@gmail.com',
-  resume: '/assets/Resume1.pdf',
+  resume: '/assets/fnSibiyaa.pdf',
 }
 
 export const siteMeta = {
