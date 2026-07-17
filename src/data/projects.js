@@ -131,4 +131,19 @@ export const projects = [
     featured: false,
     links: [{ label: 'GitHub', href: 'https://github.com/Nolitha5/Form', type: 'github' }],
   },
+
+  {
+    id: 'career-guidance-agent',
+    title: 'Career Guidance Agent — AI Career Recommendation System',
+    tag: 'AI · Full-Stack · React',
+    description:
+      'A faculty-aware career recommendation system built with React 18 + Vite and Supabase. Guides university students across 7 faculties and 28+ career paths through a 6-question quiz, scoring engine powered by a 5,000-record Kaggle dataset, and auto-saved PDF reports — with SA-localised salary ranges and role-specific job-readiness steps.',
+    image: '/assets/careerguidanceagentt.jpg',
+    video: null,
+    docs: '/assets/career_guidance_agent_documentation.pdf',
+    liveDemo: 'https://pius-agentic-quota.vercel.app/agents',
+    colab: null,
+    featured: false,
+    links: [],
+  },
 ]
