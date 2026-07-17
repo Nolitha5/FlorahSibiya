@@ -131,7 +131,6 @@ export const projects = [
     featured: false,
     links: [{ label: 'GitHub', href: 'https://github.com/Nolitha5/Form', type: 'github' }],
   },
-
   {
     id: 'career-guidance-agent',
     title: 'Career Guidance Agent — AI Career Recommendation System',
@@ -141,9 +140,11 @@ export const projects = [
     image: '/assets/careerguidanceagentt.jpg',
     video: null,
     docs: '/assets/career_guidance_agent_documentation.pdf',
-    liveDemo: 'https://pius-agentic-quota.vercel.app/agents',
+    liveDemo: 'https://career-guidance-agentt-two.vercel.app/',
     colab: null,
     featured: false,
-    links: [],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/Nolitha5/CareerGuidanceAgentt', type: 'github' },
+    ],
   },
 ]
