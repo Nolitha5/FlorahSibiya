@@ -155,7 +155,7 @@ export const projects = [
       'An intelligent WIL (Work Integrated Learning) placement agent that streamlines the process for students and institutions. More details coming soon.',
     image: '/assets/wil.png',
     video: null,
-    docs: null,
+    docs: '/assets/wil_documentation.pdf',
     liveDemo: 'https://wil-placement-agent.vercel.app/',
     colab: null,
     featured: false,
