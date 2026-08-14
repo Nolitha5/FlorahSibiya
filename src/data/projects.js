@@ -147,4 +147,20 @@ export const projects = [
       { label: 'GitHub', href: 'https://github.com/Nolitha5/CareerGuidanceAgentt', type: 'github' },
     ],
   },
+  {
+    id: 'wil-placement-agent',
+    title: 'WIL Placement Agent',
+    tag: 'AI · Full-Stack · Portal',
+    description:
+      'An intelligent WIL (Work Integrated Learning) placement agent that streamlines the process for students and institutions. More details coming soon.',
+    image: '/assets/wil.png',
+    video: null,
+    docs: null,
+    liveDemo: 'https://wil-placement-agent.vercel.app/',
+    colab: null,
+    featured: false,
+    links: [
+      { label: 'GitHub', href: 'https://github.com/Nolitha5', type: 'github' },
+    ],
+  },
 ]
