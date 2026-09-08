@@ -16,6 +16,24 @@ export const projects = [
     ],
   },
   {
+    id: 'rew-agent',
+    title: 'Academic Risk Early Warning Agent',
+    tag: 'Multi-Agent AI · EdTech · POPIA-Compliant',
+    description:
+      'A multi-agent agentic system that continuously monitors student academic signals across seven specialist domains — performance, attendance, psychosocial risk, module difficulty, temporal trends, and intervention history — synthesising evidence into a risk-stratified report delivered to human academic advisors before students reach the point of no return.',
+    image: '/assets/rewpp.png',
+    video: null,
+    docs: '/assets/rew-agent-documentation.pdf',
+    liveDemo: 'https://academic-risk-early-warning-agent.vercel.app/',
+    colab: null,
+    featured: false,
+    architecture: '/assets/rew-architecture.jpg',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/Nolitha5', type: 'github' },
+      { label: 'Architecture', href: '/assets/rew-architecture.jpg', type: 'architecture' },
+    ],
+  },
+  {
     id: 'smarttech',
     title: 'SmartTech — CV Scanner & Job Portal',
     tag: 'AI · NLP · Job Portal',

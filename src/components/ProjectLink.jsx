@@ -30,6 +30,17 @@ function ColabIcon() {
   )
 }
 
+function ArchitectureIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="3" width="7" height="7" />
+      <rect x="15" y="3" width="7" height="7" />
+      <rect x="2" y="14" width="7" height="7" />
+      <rect x="15" y="14" width="7" height="7" />
+    </svg>
+  )
+}
+
 function ProjectLink({ label, href, type, onClick, disabled }) {
   const disabledClass = disabled ? ' project-link--disabled' : ''
 
@@ -81,6 +92,16 @@ function ProjectLink({ label, href, type, onClick, disabled }) {
     return (
       <a href={href} target="_blank" rel="noreferrer" className="project-link">
         <DocsIcon />
+        {label}
+      </a>
+    )
+  }
+
+  // Architecture diagram
+  if (type === 'architecture') {
+    return (
+      <a href={href} target="_blank" rel="noreferrer" className="project-link project-link--arch">
+        <ArchitectureIcon />
         {label}
       </a>
     )

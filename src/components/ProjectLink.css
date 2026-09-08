@@ -36,6 +36,17 @@
   background: transparent;
 }
 
+/* Architecture — teal accent */
+.project-link--arch {
+  color: #0d9488;
+  border-color: rgba(13, 148, 136, 0.3);
+}
+.project-link--arch:hover {
+  color: #0f766e;
+  border-color: rgba(13, 148, 136, 0.6);
+  background: rgba(13, 148, 136, 0.06);
+}
+
 /* Colab — orange accent to match Colab branding */
 .project-link--colab {
   color: #e37400;
