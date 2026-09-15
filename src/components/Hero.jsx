@@ -18,7 +18,7 @@ function Hero() {
               <br />
               <span className="accent">Sibiya</span>
             </h1>
-            <p className="hero-subtitle">{siteMeta.role}. I build intelligent applications — from agentic AI workflows to full-stack web systems.</p>
+            <p className="hero-subtitle">Software Developer & AI Systems Developer Intern at 4IR Lab. I build full-stack applications and develop agentic AI systems — integrating LLMs, multi-agent workflows, and ML models into software that works in the real world.</p>
             <div className="hero-actions">
               <a href="#projects" className="btn-primary">
                 View my work
@@ -39,21 +39,21 @@ function Hero() {
             </div>
             <div className="hero-stats">
               <div>
-                <div className="stat-label">Focus areas</div>
+                <div className="stat-label">AI projects built</div>
                 <div className="stat-value">
-                  <span>2+</span>
+                  <span>8+</span>
                 </div>
               </div>
               <div>
                 <div className="stat-label">Projects shipped</div>
                 <div className="stat-value">
-                  <span>9+</span>
+                  <span>14+</span>
                 </div>
               </div>
               <div>
-                <div className="stat-label">Tech stack</div>
+                <div className="stat-label">Specialisation</div>
                 <div className="stat-value">
-                  <span>12+</span> tools
+                  <span>AI</span> · Dev
                 </div>
               </div>
             </div>

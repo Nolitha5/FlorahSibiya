@@ -15,7 +15,7 @@ function Projects() {
             <div className="section-label">Portfolio</div>
             <h2 className="section-title">Selected projects</h2>
             <p className="section-desc">
-              A range of work spanning AI systems, web applications, and biometric security.
+              A range of work spanning agentic AI systems, LLM integrations, full-stack applications, and more.
             </p>
           </div>
           <div className="projects-grid">
