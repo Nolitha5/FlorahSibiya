@@ -40,7 +40,7 @@ export const projects = [
     tag: 'AI · Time-Series · Forecasting',
     description:
       'An AI-powered demand forecasting agent that analyses historical sales data to predict future demand using time-series modelling. Evaluates model accuracy with MAE, WAPE, and Forecast Bias metrics, and surfaces actionable inventory recommendations through a React dashboard backed by a FastAPI service.',
-    image: '/assets/projImage.png',
+    image: '/assets/DemandPic.png',
     video: null,
     docs: null,
     liveDemo: null,
@@ -129,23 +129,6 @@ export const projects = [
     featured: false,
     techs: ['AutoGen', 'Python', 'Gradio', 'AI Agents', 'Google Colab'],
     links: [],
-  },
-  {
-    id: 'studentbot',
-    title: 'StudentBot — AI Academic Assistant',
-    tag: 'LLM · Chatbot · Education',
-    description:
-      'An AI-powered chatbot designed to assist students with academic queries. Integrates OpenAI and Hugging Face models through a Flask backend, providing context-aware responses to course content, assignment guidance, and study support.',
-    image: '/assets/projImage.png',
-    video: null,
-    docs: null,
-    liveDemo: null,
-    colab: null,
-    featured: false,
-    techs: ['Python', 'Flask', 'OpenAI API', 'Hugging Face', 'FastAPI'],
-    links: [
-      { label: 'GitHub', href: 'https://github.com/Nolitha5', type: 'github' },
-    ],
   },
   {
     id: 'smarttech',
