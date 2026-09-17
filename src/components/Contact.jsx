@@ -1,6 +1,6 @@
 import ContactChannel from './ContactChannel'
 import { socialLinks, contactInfo } from '../data/site'
-import { EmailIcon, LinkedInIcon, GitHubIcon } from './Icons'
+import { EmailIcon, LinkedInIcon, GitHubIcon, PhoneIcon } from './Icons'
 import './Contact.css'
 
 function Contact() {
@@ -23,6 +23,12 @@ function Contact() {
                 label="Email"
                 value={contactInfo.email}
                 href={`mailto:${contactInfo.email}`}
+              />
+              <ContactChannel
+                icon={<PhoneIcon fill="var(--accent)" />}
+                label="Phone"
+                value={contactInfo.phone}
+                href={`tel:${contactInfo.phone}`}
               />
               <ContactChannel
                 icon={<LinkedInIcon fill="var(--accent)" />}
