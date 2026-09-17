@@ -13,6 +13,7 @@ export const socialLinks = {
 
 export const contactInfo = {
   email: 'sibiyanolitha5@gmail.com',
+  phone: '064 928 8938',
   resume: '/assets/fnSibiyaa.pdf',
 }
 
