@@ -52,3 +52,11 @@ export function EmailIcon(props) {
     </svg>
   )
 }
+
+export function PhoneIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" {...props}>
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.5 11.5 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.5 11.5 0 00.57 3.6 1 1 0 01-.24 1.01l-2.21 2.18z" />
+    </svg>
+  )
+}
