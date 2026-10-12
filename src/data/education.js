@@ -15,6 +15,20 @@ export const educationItems = [
     ],
   },
   {
+    id: 'wethinkcode-genai',
+    type: 'certificate',
+    title: 'GenAI Course for Professionals',
+    institution: 'WeThinkCode_',
+    period: 'October 2026',
+    icon: '🏅',
+    cert: '/assets/Florah_Sibiya_WeThinkCode_GenAI.pdf',
+    highlights: [
+      'Completed the WeThinkCode_ Generative AI Course for Professionals',
+      'Covered applied generative AI concepts, tools, and professional use cases',
+      'Issued 8 October 2026 · Certified by WeThinkCode_ CEO Nyari Samushonga',
+    ],
+  },
+  {
     id: 'wil-intern',
     type: 'experience',
     title: 'Software Development Intern — WIL Programme',

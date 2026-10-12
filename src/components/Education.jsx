@@ -10,8 +10,14 @@ function TimelineItem({ item, index }) {
         <div className="timeline-card-header">
           <div className="timeline-icon">{item.icon}</div>
           <div>
-            <span className={`timeline-badge ${item.type === 'experience' ? 'badge-exp' : 'badge-edu'}`}>
-              {item.type === 'experience' ? 'Experience' : 'Education'}
+            <span className={`timeline-badge ${
+              item.type === 'experience' ? 'badge-exp'
+              : item.type === 'certificate' ? 'badge-cert'
+              : 'badge-edu'
+            }`}>
+              {item.type === 'experience' ? 'Experience'
+               : item.type === 'certificate' ? 'Certificate'
+               : 'Education'}
             </span>
             <div className="timeline-period">{item.period}</div>
           </div>
@@ -26,6 +32,20 @@ function TimelineItem({ item, index }) {
             </li>
           ))}
         </ul>
+        {item.cert && (
+          <a
+            href={item.cert}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cert-link"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+            View Certificate
+          </a>
+        )}
       </div>
       <div className="timeline-connector">
         <div className="timeline-dot" />
