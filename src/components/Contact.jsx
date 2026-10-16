@@ -59,6 +59,9 @@ function Contact() {
               <a href={`mailto:${contactInfo.email}`} className="btn-secondary">
                 Send an email
               </a>
+              <a href="/pricing" className="btn-pricing">
+                💼 View Pricing
+              </a>
             </div>
           </div>
         </div>
