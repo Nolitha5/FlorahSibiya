@@ -1,27 +1,25 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Skills from './components/Skills'
-import Education from './components/Education'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import About from './pages/About'
+import Experience from './pages/Experience'
+import Projects from './pages/Projects'
+import Pricing from './pages/Pricing'
+import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 
-function App() {
+export default function App() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Education />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="experience" element={<Experience />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   )
 }
-
-export default App

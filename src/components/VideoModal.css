@@ -2,7 +2,7 @@
   position: fixed;
   inset: 0;
   z-index: 200;
-  background: rgba(61, 18, 38, 0.72);
+  background: rgba(4, 8, 20, 0.82);
   backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
   text-transform: uppercase;
   color: var(--accent);
   background: var(--accent-dim);
-  border: 1px solid rgba(232, 70, 124, 0.18);
+  border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 999px;
   padding: 0.2rem 0.65rem;
   margin-bottom: 0.5rem;
