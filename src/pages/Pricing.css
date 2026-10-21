@@ -1,0 +1,20 @@
+.packages { align-items: stretch; }
+.package { display: flex; flex-direction: column; gap: 1.1rem; position: relative; padding: 1.9rem 1.6rem; }
+.package.featured { border-color: var(--accent-2); box-shadow: 0 16px 48px rgba(59, 130, 246, 0.2); background: linear-gradient(180deg, rgba(59, 130, 246, 0.1), var(--bg-card) 45%); }
+.ribbon { position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); background: var(--gradient); color: #fff; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 999px; white-space: nowrap; }
+.plan-name { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.plan-price { font-family: var(--font-display); font-size: 2.6rem; font-weight: 700; line-height: 1; letter-spacing: -0.03em; }
+.plan-price small { display: block; margin-top: 0.4rem; font-family: var(--font-body); font-size: 0.8rem; font-weight: 500; letter-spacing: 0; color: var(--text-muted); }
+.plan-list { display: grid; gap: 0.7rem; flex: 1; padding-top: 1.1rem; border-top: 1px solid var(--border); }
+.plan-list li, .deliverables li { position: relative; padding-left: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); }
+.plan-list li::before, .deliverables li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+.fine-print { margin-top: 1.25rem; font-size: 0.85rem; color: var(--text-muted); }
+.service { display: flex; flex-direction: column; gap: 0.7rem; align-items: flex-start; }
+.service .muted { margin: 0; }
+.service-icon { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 12px; background: var(--accent-dim); border: 1px solid var(--accent-mid); color: var(--accent); }
+.service-icon svg { width: 22px; height: 22px; }
+.deliverables { display: grid; gap: 0.35rem; flex: 1; }
+.cta-band-lite { text-align: center; padding: 2.5rem 1.5rem; background: linear-gradient(135deg, rgba(59, 130, 246, 0.14), rgba(139, 92, 246, 0.14)); }
+.cta-band-lite .lead { margin-inline: auto; }
+.cta-band-lite .btn-row { justify-content: center; }
+@media (max-width: 900px) { .packages { grid-template-columns: 1fr; max-width: 460px; margin-inline: auto; } .packages .package.featured { order: -1; } }

@@ -1,0 +1,15 @@
+.group-title { margin-bottom: 1.5rem; }
+.timeline { position: relative; display: grid; gap: 1.25rem; padding-left: 2.75rem; list-style: none; }
+.timeline::before { content: ''; position: absolute; left: 1.05rem; top: 0.5rem; bottom: 0.5rem; width: 2px; background: linear-gradient(var(--accent-2), var(--accent-3), transparent); opacity: 0.55; }
+.tl-item { position: relative; }
+.tl-dot { position: absolute; left: -2.75rem; top: 1rem; width: 2.2rem; height: 2.2rem; border-radius: 50%; display: grid; place-items: center; font-size: 1rem; background: var(--bg-surface); border: 1px solid var(--border-strong); }
+.tl-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem; }
+.tl-org { color: var(--accent); font-weight: 500; margin-top: 0.25rem; font-size: 0.95rem; }
+.tl-points { display: grid; gap: 0.4rem; margin: 1rem 0; color: var(--text-secondary); font-size: 0.92rem; }
+.tl-points li { position: relative; padding-left: 1.1rem; }
+.tl-points li::before { content: ''; position: absolute; left: 0; top: 0.62em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-3); }
+@media (max-width: 520px) {
+  .timeline { padding-left: 2.1rem; }
+  .timeline::before { left: 0.7rem; }
+  .tl-dot { left: -2.1rem; width: 1.9rem; height: 1.9rem; font-size: 0.85rem; }
+}
